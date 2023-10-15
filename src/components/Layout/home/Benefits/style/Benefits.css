@@ -1,0 +1,87 @@
+@media (min-width: 0px) {
+  .benefits {
+    background-color: #ddd;
+    margin: 3% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 1.5% 0;
+  }
+  .benefits__box {
+    width: 94vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #008000;
+    margin: 1.5% 0;
+    padding: 3% 2.5% 3% 6%;
+  }
+  .benefits__box__icon {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    background-color: #fff;
+    color: #008b8b;
+    border-radius: 50%;
+  }
+  .benefits__box__description {
+    color: whitesmoke;
+    padding-left: 2%;
+  }
+  .benefits__box:nth-of-type(2) {
+    background-color: #0ca3ee;
+  }
+  .benefits__box:nth-of-type(3) {
+    background-color: #422779;
+  }
+  .benefits__box:nth-of-type(4) {
+    background-color: #a0522d;
+  }
+  .benefits__box:nth-of-type(5) {
+    background-color: #808000;
+  }
+}
+
+@media (min-width: 800px) {
+  .benefits {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .benefits__box {
+    padding: 1.5%;
+    margin: 0 2.5%;
+    width: 22.5vw;
+    height: 22.5vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .benefits__box__description {
+    padding-top: 4%;
+    text-align: center;
+  }
+  .benefits__box__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=Benefits.css.map */

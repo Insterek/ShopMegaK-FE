@@ -1,0 +1,47 @@
+@media (min-width: 0px) {
+  .slider {
+    position: relative;
+    width: 100%;
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: 45vh;
+      display: block;
+    }
+    &__btn {
+      all: unset;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      color: #ff6347;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      transform: scale(1);
+      transition: 0.3s linear;
+    }
+  }
+  .next {
+    right: 0;
+  }
+}
+@media (min-width: 533px) and (orientation: landscape) {
+  .slider__img {
+    height: 80vh;
+  }
+  .slider__btn {
+    cursor: pointer;
+  }
+  .slider__btn:hover {
+    transform: scale(1.2);
+  }
+  .prev {
+    left: 2%;
+  }
+  .next {
+    right: 2%;
+  }
+}
+@media (min-width: 1000px) {
+  .slider__img {
+    height: 85vh;
+  }
+}

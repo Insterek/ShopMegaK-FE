@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import "./style/Navigation.css";
 import { Link } from "react-router-dom";
-import { ListBtn } from "../common/ListBtn";
+import { ListBtn } from "../../common/ListBtn";
 import { SyntheticEvent, useState } from "react";
 
 export const Navigation = () => {
