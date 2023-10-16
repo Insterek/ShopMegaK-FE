@@ -29,7 +29,7 @@
       right: 0;
       width: 0%;
       display: flex;
-      height: 100vh;
+      height: 50vh;
       flex-direction: column;
       background-color: #f6f7f8;
       border-left: 1px solid #000000bf;
@@ -70,7 +70,7 @@
     }
   }
   .active-bars {
-    width: 50%;
+    width: 100%;
   }
   .active-search {
     display: block;
