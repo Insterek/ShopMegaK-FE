@@ -1,0 +1,87 @@
+@media (min-width: 0px) {
+  .one-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 10px 0;
+  }
+  .one-product__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 1.5%;
+    margin-top: 8px;
+    list-style: none;
+    width: 44%;
+    border: 3px solid #a3a305;
+    border-radius: 12px;
+  }
+  .one-product__item__img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 100%;
+    height: 25vh;
+    border-radius: 6px;
+  }
+  .one-product__item__title {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    padding: 3% 0;
+  }
+  .one-product__item__link {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-color: initial;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff7e31), to(#e62c03));
+    background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 4px 20px;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+  .one-product__item {
+    width: 30%;
+  }
+  .one-product__item__img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 740px) {
+  .one-product__item {
+    width: 23%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .one-product__item {
+    width: 18%;
+    margin-top: 20px;
+  }
+  .one-product__item__img {
+    height: 25vh;
+  }
+}
+/*# sourceMappingURL=AllClothes.css.map */
