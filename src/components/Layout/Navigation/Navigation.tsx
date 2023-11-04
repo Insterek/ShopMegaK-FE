@@ -29,10 +29,14 @@ export const Navigation = () => {
       setActiveSearch("global-search active-search");
     }
   };
+  const closeMainMenu = () => {
+    setActiveBars("nav__list");
+    setBars(true);
+  };
   return (
     <nav className="nav">
       <div className="nav__section">
-        <Link className="nav__section__brand" to="/">
+        <Link className="nav__section__brand" to="/" onClick={closeMainMenu}>
           Clothing-Store
         </Link>
         <form onSubmit={formSubmit} className={activeSearch}>
@@ -66,11 +70,23 @@ export const Navigation = () => {
         </div>
       </div>
       <ul className={activeBars}>
-        <ListBtn link="/all_clothes" title="All Clothes" />
-        <ListBtn link="/men" title="Men" />
-        <ListBtn link="/woman" title="Woman" />
-        <ListBtn link="/accessories" title="Accessories" />
-        <ListBtn link="/footwear" title="Footwear" />
+        <ListBtn
+          link="/all_clothes"
+          title="All Clothes"
+          closeMenu={navToggle}
+        />
+        <ListBtn link="/category/men" title="Men" closeMenu={navToggle} />
+        <ListBtn link="/category/woman" title="Woman" closeMenu={navToggle} />
+        <ListBtn
+          link="/category/accessories"
+          title="Accessories"
+          closeMenu={navToggle}
+        />
+        <ListBtn
+          link="/category/footwear"
+          title="Footwear"
+          closeMenu={() => setActiveBars("nav__list")}
+        />
       </ul>
     </nav>
   );
