@@ -70,6 +70,9 @@
 }
 
 @media (min-width: 740px) {
+  .width-product {
+    min-height: 60vh;
+  }
   .one-product__item {
     width: 23%;
   }
@@ -81,7 +84,7 @@
     margin-top: 20px;
   }
   .one-product__item__img {
-    height: 25vh;
+    max-height: 25vh;
   }
 }
 /*# sourceMappingURL=AllClothes.css.map */

@@ -17,7 +17,6 @@ export const OneProductView = () => {
   if (productInfo === null) {
     return null;
   }
-  console.log(productInfo.product);
   return (
     <div className="single-product">
       <div className="single-product__box">
