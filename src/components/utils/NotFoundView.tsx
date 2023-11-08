@@ -1,4 +1,4 @@
-import "./style/NotFound.css";
+import "./style/utils.css";
 import imgGears from "../../images/gears.png";
 export const NotFoundView = () => {
   return (

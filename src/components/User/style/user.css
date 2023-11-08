@@ -1,0 +1,104 @@
+@media (min-width: 0px) {
+  .login {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+  .user {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .user__input {
+    width: 90%;
+    height: 5vh;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .user__text {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+  }
+  .user__link {
+    padding-left: 5px;
+  }
+  .btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-color: initial;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff7e31), to(#e62c03));
+    background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 4px 20px;
+    text-decoration: none;
+    font-size: clamp(1.1rem, 2vw, 1.2rem);
+  }
+  .result-info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 70vh;
+  }
+  .result-info__text {
+    text-align: center;
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 500px) and (orientation: landscape) {
+  .user {
+    height: 70%;
+  }
+  .user__input {
+    width: 50%;
+    height: 8vh;
+  }
+  .result-info__text {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .user__input {
+    width: 40%;
+    height: 6vh;
+  }
+  .result-info__text {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=user.css.map */

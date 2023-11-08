@@ -7,6 +7,8 @@ import { AllClothes } from "./components/subPages/AllClothes/AllClothes";
 import { OneProductView } from "./components/subPages/SingleProduct/SingleProductView";
 import { Category } from "./components/subPages/Category/Category";
 import { NotFoundView } from "./components/utils/NotFoundView";
+import { Login } from "./components/User/Login";
+import { Register } from "./components/User/Register";
 
 export const App = () => {
   return (
@@ -17,6 +19,8 @@ export const App = () => {
         <Route path="/all_clothes" element={<AllClothes />} />
         <Route path="/products/:idOfProduct" element={<OneProductView />} />
         <Route path="/category/:categoryName" element={<Category />} />
+        <Route path="/user" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/*" element={<NotFoundView />} />
       </Routes>
       <Footer />

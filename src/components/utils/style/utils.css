@@ -1,0 +1,95 @@
+@media (min-width: 0px) {
+  .not-found {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 70vh;
+    padding: 15px 0;
+  }
+  .not-found__img {
+    width: 70%;
+    height: 40%;
+  }
+  .not-found__info {
+    width: 60%;
+    text-align: center;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    padding-top: 3%;
+  }
+  .spinner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+  .spinner__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-animation: rotation 1s linear infinite;
+            animation: rotation 1s linear infinite;
+  }
+}
+
+@media (min-width: 500px) and (orientation: landscape) {
+  .not-found {
+    height: 80vh;
+  }
+  .not-found__img {
+    width: 50%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .not-found__img {
+    width: 25%;
+    height: 50%;
+  }
+  .not-found__info {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=utils.css.map */
