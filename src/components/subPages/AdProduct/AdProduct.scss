@@ -1,0 +1,38 @@
+@media (min-width: 0px) {
+  .wrapper {
+    width: 100%;
+    height: 80vh;
+    padding: 8px 0;
+  }
+  .ad-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    &__input {
+      width: 75%;
+      margin: 10px 0;
+      height: 5vh;
+      padding: 5px 10px;
+    }
+    &__area {
+      width: 75%;
+    }
+  }
+}
+@media (min-width: 500px) and (orientation: landscape) {
+  .wrapper {
+    min-height: 80vh;
+  }
+  .ad-product {
+    min-height: 70vh;
+    &__input {
+      width: 40%;
+      height: 8vh;
+    }
+    &__area {
+      width: 40%;
+    }
+  }
+}

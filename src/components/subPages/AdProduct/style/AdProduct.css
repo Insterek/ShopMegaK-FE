@@ -1,0 +1,49 @@
+@media (min-width: 0px) {
+  .wrapper {
+    width: 100%;
+    height: 80vh;
+    padding: 8px 0;
+  }
+  .ad-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70vh;
+  }
+  .ad-product__input {
+    width: 75%;
+    margin: 10px 0;
+    height: 5vh;
+    padding: 5px 10px;
+  }
+  .ad-product__area {
+    width: 75%;
+  }
+}
+
+@media (min-width: 500px) and (orientation: landscape) {
+  .wrapper {
+    min-height: 80vh;
+  }
+  .ad-product {
+    min-height: 70vh;
+  }
+  .ad-product__input {
+    width: 40%;
+    height: 8vh;
+  }
+  .ad-product__area {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=AdProduct.css.map */
